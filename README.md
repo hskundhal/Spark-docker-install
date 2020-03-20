@@ -12,5 +12,6 @@ The provided `docker-compose.yml` and Spark configurations in `conf` directory a
 `CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                                                                                           NAMES
 9f529ef2a9b0        gettyimages/spark   "bin/spark-class org…"   12 seconds ago      Up 8 seconds        7012-7016/tcp, 8881/tcp, 0.0.0.0:8081->8081/tcp                                                                 spark-docker-setup_worker_1
 3d6538c195dd        gettyimages/spark   "bin/spark-class org…"   16 seconds ago      Up 11 seconds       0.0.0.0:4040->4040/tcp, 0.0.0.0:6066->6066/tcp, 0.0.0.0:7077->7077/tcp, 0.0.0.0:8080->8080/tcp, 7001-7006/tcp   spark-docker-setup_master_1`
+
 3. Run `$ docker exec -it spark-docker-setup_master_1 /bin/bash` to get into the container shell and able to run  `spark-shell`, `pyspark` or `spark-submit` at terminal.
 
